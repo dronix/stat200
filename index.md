@@ -81,7 +81,7 @@ Before finding the solution we must identify the information given.
 - $n = 100$
 - $\sigma = 15$
 
-**a.)** Since $\mu_X$ is the same as $\mu$, we can say that ==$\mu = 34$==, or that the mean of the sample is 34. To find the standard deviation, we use the formula
+**a.)** Since $\mu_X$ is representative of $\mu$, we can say that ==$\mu = 34$==, or that the mean of the sample is 34. To find the standard deviation, we use the formula
 $$\sigma_X = \frac {\sigma}{\sqrt n}$$
 Then we plug in the values that we were given
 $$\sigma_X = \frac {15}{\sqrt {100}} = 1.5$$
