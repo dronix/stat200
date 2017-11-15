@@ -58,7 +58,7 @@ plt.show()
 ##7.1 Finding the mean and standard deviation of a sample mean
 
 The **mean** of a **sample mean** is represented as $\mu_X$
-The **standard deviation** is represnted as $\sigma_X$ and can be calculated by using the following formula: $$\frac {\mu_X}{\sqrt n}$$
+The **standard deviation** is represnted as $\sigma_X$ and can be calculated by using the following formula: $$\frac {\sigma}{\sqrt n}$$
 
 ###Example 7.1
 
@@ -362,7 +362,7 @@ x2 = np.linspace(0.0, 2.0)
 y1 = np.cos(2 * np.pi * x1) * np.exp(-x1)
 y2 = np.cos(2 * np.pi * x2)
 
-plt.subplot(2, 1, 1)
+plt.subplot(2, 1, 1
 plt.plot(x1, y1, 'o-')
 plt.title('A tale of 2 subplots')
 plt.ylabel('Damped oscillation')
