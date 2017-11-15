@@ -82,10 +82,10 @@ Then we plug in the values that we were given
 $$\sigma_X = \frac {15}{\sqrt {100}} = 1.5$$
 Therefore, we can say that ==$\sigma_X = 1.5$==, or that the standard deviation for the sample is 1.5.
 
-**b.)** The second questions is asking for the **probability** that the sample mean age is more than ==30 years==. We can find this information by determening the **z-score** and then looking for the **area** or percentage to the **RIGHT** of **z**.
+**b.)** The second question is asking for the **probability** that the sample mean age is more than ==30 years==. We can find this information by determening the **z-score** and then looking for the **area** or percentage to the **RIGHT** of **z**.
 
 So we begin by finding the **z-score** using the information provided and the result of $\sigma_x$ from the previous question:
-$$\begin{gathered} z = \frac {\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}} \\ \\ z = \frac {30 - 34}{1.5} \\ \\ z = -2.67 \\ z = 0.0038\end{gathered}$$
+$$\begin{gathered} z = \frac {x - \mu}{\frac{\sigma}{\sqrt{n}}} \\ \\ z = \frac {30 - 34}{1.5} \\ \\ z = -2.67 \\ z = 0.0038\end{gathered}$$
 
 As you can see the area to the **LEFT** of the **z** value is 0.0038, this means that there is a 0.38% probability that the sample mean age is 30 years or **less**. However, the problem is asking for 30 years or **more**.
 
@@ -97,10 +97,10 @@ Our result for the probability that the sample mean age is more than 30 years, i
 
 **c.)** In this scenerio, we are told to find the 95^th^ percentile of the sample mean, meaning we need to find the sample mean that has a probability of **95% or less**. 
 
-We start by using the **z-score** formula. $$z = \frac {\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}$$
+We start by using the **z-score** formula. $$z = \frac {x - \mu}{\frac{\sigma}{\sqrt{n}}}$$
 
-In this case we are looking for the value of $\bar{x}$. We can use the **z-score** formula to solve for $\bar{x}$.
-$$\bar{x} = (z)(\frac{\sigma}{\sqrt{n}}) + \mu$$
+In this case we are looking for the value of $\bar{x}$. We can use the **z-score** formula to solve for $x$.
+$$x = (z)(\frac{\sigma}{\sqrt{n}}) + \mu$$
 
 We can then use the **z-score** table to find the value of **z** given the probability of 95% or 0.95.
 
@@ -112,9 +112,9 @@ We can then use the **z-score** table to find the value of **z** given the proba
 
 As you can see, in our table, 0.95 falls between 1.64 and 1.65, so we can estimate **z** to be ==1.645==.
 
-Now we go back to our formula using our **z** value and solve for $\bar{x}$.
+Now we go back to our formula using our **z** value and solve for $x$.
 
-$$\begin{gathered} \bar{x} = (z)(\frac{\sigma}{\sqrt{n}}) + \mu \\ \\ \bar{x} = (1.645)(1.5) + 34 \\ \\ \bar{x} = 36.4675 \\ \\ \bar{x} \approx 36.5\end{gathered}$$
+$$\begin{gathered} x = (z)(\frac{\sigma}{\sqrt{n}}) + \mu \\ \\ x = (1.645)(1.5) + 34 \\ \\ x = 36.4675 \\ \\ x \approx 36.5\end{gathered}$$
 
 Our result for the 95^th^ percentile for the sample mean age, is ==36.5==.
 
