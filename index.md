@@ -58,7 +58,7 @@ plt.show()
 ##7.1 Finding the mean and standard deviation of a sample mean
 
 The **mean** of a **sample mean** is represented as $\mu_X$
-The **standard deviation** is represnted as $\sigma_X$ and can be calculated by using the following formula: $$\frac {\sigma}{\sqrt n}$$
+The **sample standard deviation** is represnted as $\sigma_X$ and can be calculated by using the following formula: $$\frac {\sigma}{\sqrt n}$$
 
 ###Example 7.1
 
