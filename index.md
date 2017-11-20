@@ -221,7 +221,7 @@ This result ==$E = 86.60$== means that the margin of error is 86.60.
 Now we have all the information neccessary to answer $\bar{x} - E < \mu < \bar{x} + E$. Lets plug in the values.
 $$\begin{gathered} \bar{x} - E < \mu < \bar{x} + E \\ 5,000 - E < \mu < 5,000 + E \\ 5,000 - 86.60 < \mu < 5,000 + 86.60 \\ 4,913.4 < \mu < 5,086.6 \\ 4,913 < \mu < 5,087 \end{gathered}$$
 
-**a.)** So the answer the first question is ==$4,913.4 < \mu < 5,086.6$==.
+**a.)** So the answer the first question is ==$4,913 < \mu < 5,087$==.
 
 With this information we can then answer the second question. 
 
@@ -273,7 +273,46 @@ Notice that ==$n = 43.2964$==, but we must always round UP to the next higher in
 
 Therefore, our final answer is ==$n = 44$==.
 
+### Example 8.3
 
+Suppose that a committee is studying whether or not there is waste of time in our judicial system. ==It is interested in the mean amount of time== individuals waste at the courthouse waiting to be called for jury duty. The committee randomly surveyed ==81 people== who recently served as jurors. The ==sample mean== wait time was ==eight hours== with a ==sample standard deviation== of ==four hours==.
+
+a. Construct a 95% confidence interval for the population mean time wasted.
+- i. State the confidence interval.
+- ii. Calculate the error bound.
+#### Solution
+
+Lets list all the information we were given.
+
+- $\bar{x}$ = 8
+- $s_x$ = 4
+- $n$ = 81
+
+Once again, lets determine what distribution we should use. We were told that ==81 people== were surveyed, or that ==$n$ = 81==. This information meets one of the criterias for the **z-score** and **t-score**. Now lets look further into the problem to decide which distribution we should use out of those two. The next key information is that the ==sample standard deviation== is ==four hours==, or that ==$s_x$ = 4==. The fact that we were told the standard deviation of the sample ($s_x$) and not of the population ($\sigma$), meets the criteria for using the **t-score** distribution. 
+
+Remember that given that either **n > 30**, or that the **population is normally distributed**, you would use the **z-score** distribution when the standard deviation of the population is **known** ($\sigma$), but if $\sigma$ is **unknown**, then you would use the **t-score** distribution. 
+
+**a.)** Before finding the 95% confidence interval for the population mean time wasted, lets update the information that we have.
+
+- $\bar{x}$ = 8
+- $s_x$ = 4
+- $n$ = 81
+- $n -1$ = 80
+- $CL$ = 95% or 0.95
+
+We know from previous examples that in order to find the **confidence interval** we can use the formula ==$E = t_{\alpha/2}\cdot\frac{\sigma}{\sqrt{n}}$==
+
+But before we do that we need to find the value of ==$t_{\alpha/2}$==.
+
+We know that $CL = 1 - \alpha$. Therefore, in this scenerio, 95% or 0.95 = 1 - $\alpha$. To find alpha we can say:
+$$\begin{gathered}\alpha = 1 - CL \\ \alpha = 1 - 0.95 \\ \alpha = 0.05 \end{gathered}$$
+
+Now that we know that ==$\alpha = 0.05$==, we can say that
+$$\begin{gathered}t_{\alpha/2} = t_{0.05/2} \\ t_{\alpha/2} = t_{0.025}\end{gathered}$$
+
+Before moving on, it is important to recall that $t_{\alpha/2}$ gives us the area to the **RIGHT** of $t_{\alpha/2}$. This fact can be confusing, but it is crucial. 
+
+Next, in order to find the value of ==$t_{0.025}$== we can use the **t-distribution** table.
 
 
 # Testing Graphs
@@ -362,7 +401,7 @@ x2 = np.linspace(0.0, 2.0)
 y1 = np.cos(2 * np.pi * x1) * np.exp(-x1)
 y2 = np.cos(2 * np.pi * x2)
 
-plt.subplot(2, 1, 1
+plt.subplot(2, 1, 1)
 plt.plot(x1, y1, 'o-')
 plt.title('A tale of 2 subplots')
 plt.ylabel('Damped oscillation')
